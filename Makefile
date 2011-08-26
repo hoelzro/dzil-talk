@@ -7,4 +7,4 @@ all: dzil-talk.pdf
 	latex $<
 
 clean:
-	rm -f dzil-talk.aux dzil-talk.log dzil-talk.ps dzil-talk.pdf texput.log
+	rm -f dzil-talk.aux dzil-talk.log dzil-talk.ps dzil-talk.pdf texput.log dzil-talk.out
