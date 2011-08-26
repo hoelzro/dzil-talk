@@ -1,0 +1,12 @@
+The source code for my Dist::Zilla talk.
+
+Code for the examples is under examples/.
+
+To build the PDF, just run 'make', and dzil-talk.pdf will be built.
+
+This presentation requires the following LaTeX packages to be installed:
+
+- texpower
+
+A lot of slideshow-based talks rely on the speaker to clarify some of the
+slide content, so I decided to include my commentary in the LaTeX source.
