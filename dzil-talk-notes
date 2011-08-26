@@ -1,0 +1,49 @@
+- Dist::Zilla - distribution swiss army knife
+- Dist::Zilla character thing
+
+- How many of you have released a module on the CPAN?
+- For those of you who haven't, why not?
+- I learned Perl in 2006, and yet I released my first module to the CPAN just this past January.
+- Why?
+- Fear is the <strike>mind</strike> module killer!
+- I was afraid; afraid people would say my code would suck, afraid I'd miss some small detail about packaging things up.
+- Regarding the first fear, I eventually figured that my first couple modules might suck, but knowing the Perl community,
+  I'd probably get useful feedback.  That's how you grow.
+- Regarding the second, I figured the only way to get all of the details down is to do a bunch of module releases; it's okay
+  if it's not perfect.
+- So I released a couple of modules...
+- Releasing modules isn't *hard*, but there's a lot of tedium that goes into it.
+    - Writing (good) tests. (you *are* writing tests, right?)
+    - Writing code that passes those tests.
+    - Maintaining your Changes file.
+    - Maintaining your README file.
+    - Maintaining your LICENSE file.
+    - Maintaining your MANIFEST file.
+    - Maintaining your documentation.
+    - Maintaining your Makefile.PL/Build.PL.
+    - Maintaining your META.yml/META.json.
+    - Making sure all of your versions match.
+- And you have to remember to do all of these things for every release of every distribution you write.
+
+- To quote the ShipIt distribution: "This is all a pain in the ass."
+- This is how I did my first few modules.
+- But then I remembered Dist::Zilla, which I had heard about last year, but didn't seem that relevant, since I wasn't a module author.
+- I decided the next module I wrote would use Dist::Zilla for packaging.
+- Mention predecessors/alternatives:
+ - ShipIt
+ - Module::Starter
+
+- Overview of Dist::Zilla build process/plugin types
+- Configuration
+- Plugins and Plugin bundles (and author bundles)
+- Plugins to look at
+- Writing your own plugins
+
+- Pitfalls
+ - README
+ - Debugging (-v)
+ - Changes post release
+
+Common Plugins
+Writing a Plugin
+Dzil Pitfalls
