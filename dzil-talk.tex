@@ -1,82 +1,90 @@
-\documentclass{article}
+\documentclass{beamer}
 
-\usepackage[display]{texpower}
-\usepackage[landscape]{geometry}
-\usepackage[colorlinks=true,urlcolor=blue]{hyperref}
+\usetheme{Warsaw}
+
+\title{Dist::Zilla - Distribution Swiss Army Knife}
+\author{Rob Hoelz}
+\institute{INOC}
+\date{September 20th, 2011}
+
 \usepackage{ulem}
-
-\pagestyle{empty}
 
 \begin{document}
 
-\begin{center}
-\huge{Dist::Zilla}
-\LARGE{Distribution Swiss Army Knife}
-\end{center}
+\begin{frame}
+\titlepage
+\end{frame}
 
-\newpage
+\begin{frame}
+Before we begin, I'd like a show of hands...
+\end{frame}
 
-\large{How many of you have written a Perl module?}
+\begin{frame}
+How many of you have written a Perl module?
+\end{frame}
 
-\newpage
+\begin{frame}
+How many of you have released one to the CPAN?
+\end{frame}
 
-\large{How many of you have released one to the CPAN?}
-
-\newpage
-
-\large{For those of you who didn't raise your hands...}
-
+\begin{frame}
+For those of you who didn't raise your hands...
 \pause
+Why not?
+\end{frame}
 
-\large{Why not?}
+\begin{frame}
+I learned Perl in 2006, and yet I didn't release my first module to the CPAN until this past January
+\end{frame}
 
-\newpage
+\begin{frame}
+Why Not?
+\end{frame}
 
-\large{I learned Perl in 2006, and yet I didn't release my first module to the CPAN until this past January}
+\begin{frame}
+Fear is the mind killer!
+\end{frame}
 
-\newpage
+\begin{frame}
+Fear is the \sout{mind} module killer!
+\end{frame}
 
-\large{Why Not?}
+\begin{frame}
+I was afraid I'd screw something up!
+\end{frame}
 
-\newpage
+\begin{frame}
+Truth is, there's a lot that goes into releasing a module!
+\end{frame}
 
-\large{Fear is the \sout{mind} module killer!}
-
-\newpage
-
-\large{I was afraid I'd screw something up!}
-
-\newpage
-
-\large{Truth is, there's a lot that goes into releasing a module!}
-
-\newpage
+\begin{frame}
 
 \begin{center}
 \LARGE{Namely...}
 \end{center}
 
-\pause
-
 \begin{itemize}
-\item \large{Writing (good) tests. (you \textit{are} writing tests, right?} \pause
-\item \large{Writing code that passes those tests.} \pause
-\item \large{Maintaining your Changes file.} \pause
-\item \large{Maintaining your README file.} \pause
-\item \large{Maintaining your LICENSE file.} \pause
-\item \large{Maintaining your MANIFEST file.} \pause
-\item \large{Maintaining your documentation.} \pause
-\item \large{Maintaining your Makefile.PL/Build.PL.} \pause
-\item \large{Maintaining your META.yml/META.json.} \pause
-\item \large{Making sure all of your versions match.} \pause
+\pause \item \large{Writing (good) tests. (you \textit{are} writing tests, right?}
+\pause \item \large{Writing code that passes those tests.}
+\pause \item \large{Maintaining your Changes file.}
+\pause \item \large{Maintaining your README file.}
+\pause \item \large{Maintaining your LICENSE file.}
+\pause \item \large{Maintaining your MANIFEST file.}
+\pause \item \large{Maintaining your documentation.}
+\pause \item \large{Maintaining your Makefile.PL/Build.PL.}
+\pause \item \large{Maintaining your META.yml/META.json.}
+\pause \item \large{Making sure all of your versions match.}
 \end{itemize}
 
+\pause
+
 \large{And you have to remember to do all of these things for every single release of every distribution you write.}
+\end{frame}
 
-\newpage
-
-\large{To quote the ShipIt distribution...}
+\begin{frame}
+\large{To quote the ShipIt distribution...} \\
 \pause
 \large{\textit{"This is all a pain in the ass."}}
+\end{frame}
 
 \end{document}
