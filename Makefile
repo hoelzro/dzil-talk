@@ -1,9 +1,11 @@
+TEX_FILES=$(shell ls *.tex)
+
 all: dzil-talk.pdf
 
-%.pdf: %.dvi
+dzil-talk.pdf: dzil-talk.dvi
 	dvipdf $< $@
 
-%.dvi: %.tex
+dzil-talk.dvi: $(TEX_FILES)
 	latex $<
 
 clean:
