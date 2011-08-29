@@ -9,4 +9,4 @@ dzil-talk.dvi: $(TEX_FILES)
 	latex $<
 
 clean:
-	rm -f dzil-talk.aux dzil-talk.log dzil-talk.ps dzil-talk.pdf texput.log dzil-talk.out dzil-talk.dvi dzil-talk.nav dzil-talk.snm dzil-talk.toc
+	rm -f *.aux *.log dzil-talk.ps dzil-talk.pdf *.out *.dvi *.nav *.snm *.toc
