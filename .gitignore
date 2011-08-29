@@ -1,8 +1,8 @@
-dzil-talk.aux
-dzil-talk.log
-dzil-talk.nav
-dzil-talk.out
+*.aux
+*.log
+*.nav
+*.out
 dzil-talk.pdf
 dzil-talk.ps
-dzil-talk.snm
-dzil-talk.toc
+*.snm
+*.toc
