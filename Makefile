@@ -6,7 +6,7 @@ dzil-talk.pdf: dzil-talk.dvi
 	dvipdf $< $@
 
 dzil-talk.dvi: $(TEX_FILES)
-	latex $<
+	latex dzil-talk.tex
 
 clean:
 	rm -f *.aux *.log dzil-talk.ps dzil-talk.pdf *.out *.dvi *.nav *.snm *.toc
