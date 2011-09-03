@@ -4,6 +4,7 @@
  - ShipIt
  - Module::Starter
 
+- Show before/after example
 - Overview of Dist::Zilla build process/plugin types
 - Configuration
 - Plugins and Plugin bundles (and author bundles)
