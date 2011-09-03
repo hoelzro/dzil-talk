@@ -1,14 +1,5 @@
 - Dist::Zilla character thing
 
-- I was afraid; afraid people would say my code would suck, afraid I'd miss some small detail about packaging things up.
-- Regarding the first fear, I eventually figured that my first couple modules might suck, but knowing the Perl community,
-  I'd probably get useful feedback.  That's how you grow.
-- Regarding the second, I figured the only way to get all of the details down is to do a bunch of module releases; it's okay
-  if it's not perfect.
-- So I released a couple of modules...
-- Releasing modules isn't *hard*, but there's a lot of tedium that goes into it.
-
-- This is how I did my first few modules.
 - But then I remembered Dist::Zilla, which I had heard about last year, but didn't seem that relevant, since I wasn't a module author.
 - I decided the next module I wrote would use Dist::Zilla for packaging.
 - Mention predecessors/alternatives:
@@ -27,5 +18,8 @@
  - Changes post release
 
 Common Plugins
+Plugin bundles
+Author bundles
 Writing a Plugin
 Dzil Pitfalls
+Talk to #dist-zilla
