@@ -1,0 +1,23 @@
+\newcommand{\dzilexample}[2]{
+\begin{frame}
+\begin{center}
+\LARGE{#1}
+\end{center}
+
+\begin{shaded}
+#2
+\end{shaded}
+\end{frame}
+}
+
+\begin{frame}
+Before we get into how you configure Dist::Zilla to do your bidding,
+let's go over some of the basic usage of Dist::Zilla.
+\end{frame}
+
+\dzilexample{Create a new distribution}{dzil new My::New::Module}
+\dzilexample{Build a distribution tarball}{dzil build}
+\dzilexample{Release a distribution}{dzil release}
+\dzilexample{Release a trial distribution}{dzil release --trial} % comment on why you would do this
+\dzilexample{Test your distribution}{dzil test} % comment on how you don't really use this
+\dzilexample{List your distribution's dependencies}{dzil listdeps} % comment on how you usually pipe it to xargs cpanm
