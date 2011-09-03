@@ -1,7 +1,5 @@
 - Dist::Zilla character thing
 
-- But then I remembered Dist::Zilla, which I had heard about last year, but didn't seem that relevant, since I wasn't a module author.
-- I decided the next module I wrote would use Dist::Zilla for packaging.
 - Mention predecessors/alternatives:
  - ShipIt
  - Module::Starter
