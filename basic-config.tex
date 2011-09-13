@@ -1,0 +1,41 @@
+\begin{frame}
+Now that we've covered the basic command line usage, let's take a look at a config file.
+\pause
+Dist::Zilla config files are located at the root of your distribution's directory hierarchy, and
+is named \textit{dist.ini}.
+\end{frame}
+
+\begin{frame}
+\begin{shaded}
+[@Basic]
+\end{shaded}
+\end{frame}
+
+\begin{frame}
+Wow, that was easy!
+
+% explain that [@Basic] is a plugin bundle
+
+\pause
+"[@Basic]" is what's known as a \textit{plugin bundle}.  It's a nice way to refer to a bunch of plugins
+at once.  For example, the previous config file is (currently) equivalent to this one:
+\end{frame}
+
+\begin{frame}
+\begin{shaded}
+[GatherDir] \newline
+[PruneCruft] \newline
+[ManifestSkip] \newline
+[MetaYAML] \newline
+[License] \newline
+[Readme] \newline
+[ExtraTests] \newline
+[ExecDir] \newline
+[ShareDir] \newline
+[MakeMaker] \newline
+[Manifest] \newline
+[TestRelease] \newline
+[ConfirmRelease] \newline
+[UploadToCPAN]
+\end{shaded}
+\end{frame}
