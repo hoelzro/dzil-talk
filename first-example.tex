@@ -1,0 +1,75 @@
+\begin{frame}
+Example One
+\end{frame}
+
+\begin{frame}
+We'll start out with a test file.
+\end{frame}
+
+\begin{shaded}
+\begin{minted}{perl}
+use strict;
+use warnings;
+
+use Test::More plan => 3;
+
+use_ok 'Rob::DZil::ExampleOne';
+
+is Rob::DZil::ExampleOne->magic_number, 17;
+is Rob::DZil::ExampleOne->dist_zilla, 'awesome';
+\end{minted}
+\end{shaded}
+
+\begin{frame}
+Next, an implementation of that module.
+\end{frame}
+
+\begin{shaded}
+\begin{minted}{perl}
+package Rob::DZil::ExampleOne;
+
+use strict;
+use warnings;
+
+sub magic_number {
+    return 17;
+}
+
+sub dist_zilla {
+    return 'awesome';
+}
+
+1;
+
+__END__
+
+=head1 SYNOPSIS
+
+  use Rob::DZil::ExampleOne;
+  use feature 'say';
+
+  say Rob::DZil::ExampleOne->magic_number;
+
+=head1 DESCRIPTION
+
+A simple example module.
+
+=head1 METHODS
+
+=head2 magic_number
+
+Returns Rob's magic number.
+
+=head2 dist_zilla
+
+Returns the state of Dist::Zilla.
+
+=cut
+\end{minted}
+\end{shaded}
+
+% note that there's not $VERSION, and the POD is rather sparse
+
+\begin{frame}
+And finally we'll use the first dist.ini you saw above.
+\end{frame}
