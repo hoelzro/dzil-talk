@@ -75,3 +75,34 @@ Returns the state of Dist::Zilla.
 \begin{frame}
 And finally we'll use the first dist.ini you saw above.
 \end{frame}
+
+\begin{frame}
+And now...\pause we build!
+
+\begin{shaded}
+dzil build
+\end{shaded}
+\end{frame}
+
+\begin{frame}
+This will build a distribution tarball, along with an unpacked directory
+with its contents.  Those contents are...
+\end{frame}
+
+\begin{verbatim}
+Rob-DZil-ExampleOne-0.01
+├── Changes
+├── LICENSE
+├── MANIFEST
+├── META.yml
+├── Makefile.PL
+├── README
+├── dist.ini
+├── lib
+│   └── Rob
+│       └── DZil
+│           └── ExampleOne.pm
+├── t
+│   └── basic.t
+└── weaver.ini
+\end{verbatim}
