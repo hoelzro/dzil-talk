@@ -1,14 +1,6 @@
-\begin{frame}
-\begin{center}
-\LARGE{Example Distribution}
-\end{center}
-\end{frame}
+\seperatorslide{Example Distribution}
 
-\begin{frame}
-\begin{shaded}
-dzil new Rob::DZil::Example
-\end{shaded}
-\end{frame}
+\dzilexample{First we create the dist...}{dzil new Rob::DZil::Example}
 
 \begin{frame}[fragile=singleslide,c]
 \LARGE{
@@ -28,19 +20,15 @@ dzil new Rob::DZil::Example
 \inputexample{lib/Rob/DZil/Example.pm}
 \inputexample{dist.ini}
 
-\begin{frame}
-And now...\pause we build!
-
-\begin{shaded}
-dzil build
-\end{shaded}
-\end{frame}
+\dzilexample{And now...\pause we build!}{dzil build}
 
 \begin{frame}
 This will build a distribution tarball, along with an unpacked directory
 with its contents.  Those contents are...
 \end{frame}
 
+\begin{frame}[fragile=singleslide,c]
+\LARGE{
 \begin{verbatim}
 |-- Changes
 |-- LICENSE
@@ -55,3 +43,5 @@ with its contents.  Those contents are...
 \-- t
     \-- basic.t
 \end{verbatim}
+}
+\end{frame}
