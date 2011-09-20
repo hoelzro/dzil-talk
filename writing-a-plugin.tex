@@ -1,0 +1,16 @@
+\begin{frame}[fragile]
+\begin{center}
+\LARGE{Writing a Dist::Zilla Plugin}
+\end{center}
+\begin{shaded}
+\begin{minted}{perl}
+say "Moosey Fate";
+\end{minted}
+\end{shaded}
+\end{frame}
+
+\commentary{Dist::Zilla is written using Moose, so to write a plugin, you create a Moose class that consumes one or more roles.}
+\commentary{Each role is based off of Dist::Zilla::Role::Plugin.}
+\commentary{If you want to implement a plugin bundle, you can consume the Dist::Zilla::Role::PluginBundle role.}
+
+\seperatorslide{The Dist::Zilla Lifecycle}
