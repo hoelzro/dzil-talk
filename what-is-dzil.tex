@@ -1,15 +1,15 @@
 \begin{frame}
-What is Dist::Zilla?
+\begin{center}
+\LARGE{What is Dist::Zilla?}
+\end{center}
 \end{frame}
 
 \begin{frame}
 "Dist::Zilla builds distributions of code to be uploaded to the CPAN." \\
-\pause
-Yeah, so what!  So does MakeMaker!
 \end{frame}
 
 \begin{frame}
-Dist::Zilla goes a step further.  It generates MakeMaker input for you, among
+Dist::Zilla goes a step further than other tools like MakeMaker.  It can generate MakeMaker input for you, among
 many, many other things:
 
 \begin{itemize}
@@ -18,13 +18,90 @@ many, many other things:
 \pause \item Helps you to maintain a Changes file.
 \pause \item Manages your MANIFEST and LICENSE files.
 \pause \item Tags and pushes releases to your revision control system.
-\pause \item Uploads your release to CPAN.
 \pause \item Manages your META.yml/META.json for you.
-\pause \item Detects your distribution's prerequisites.
-\pause \item Verifies that your distribution's prerequisites are correct.
-\pause \item Weaves common POD into your modules (like license information, bug reporting information, author name, etc)
+\pause \item Manages your distribution's prerequisites.
+\pause \item Uploads your release to CPAN.
+\pause \item Weaves common POD into your modules.
 \end{itemize}
 
 \pause 
 And much, much more!
 \end{frame}
+
+% To show off Dist::Zilla's file munging features...
+\begin{frame}
+\begin{center}
+\LARGE{Before}
+\end{center}
+\end{frame}
+
+\tiny{
+\begin{minted}{perl}
+package Foo::Bar;
+
+use strict;
+use warnings;
+
+our $VERSION = '0.01';
+
+1;
+
+__END__
+
+=head1 NAME
+
+Foo::Bar -
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 METHODS
+
+=head1 BUG REPORTING
+
+...
+
+=head1 COPYING
+
+...
+
+=head1 AUTHOR
+
+Rob Hoelz <rob@hoelz.ro>
+
+=head1 SEE ALSO
+
+L<Foo>
+\end{minted}
+}
+
+\newpage
+
+\begin{frame}
+\begin{center}
+\LARGE{After}
+\end{center}
+\end{frame}
+\tiny{
+\begin{minted}{perl}
+package Foo::Bar;
+
+use strict;
+use warnings;
+
+1;
+
+__END__
+
+# ABSTRACT:
+
+=head1 SYNOPSIS
+
+=head1 DESCRIPTION
+
+=head1 METHODS
+
+=cut
+\end{minted}
+}
