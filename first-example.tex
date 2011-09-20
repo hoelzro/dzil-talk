@@ -1,79 +1,43 @@
 \begin{frame}
-Example One
+\begin{center}
+\LARGE{Example Distribution}
+\end{center}
 \end{frame}
 
 \begin{frame}
-We'll start out with a test file.
-\end{frame}
-
 \begin{shaded}
-\begin{minted}{perl}
-use strict;
-use warnings;
-
-use Test::More plan => 3;
-
-use_ok 'Rob::DZil::ExampleOne';
-
-is Rob::DZil::ExampleOne->magic_number, 17;
-is Rob::DZil::ExampleOne->dist_zilla, 'awesome';
-\end{minted}
+dzil new Rob::DZil::Example
 \end{shaded}
-
-\begin{frame}
-Next, an implementation of that module.
 \end{frame}
 
+\begin{frame}
 \begin{shaded}
-\begin{minted}{perl}
-package Rob::DZil::ExampleOne;
-
-use strict;
-use warnings;
-
-sub magic_number {
-    return 17;
-}
-
-sub dist_zilla {
-    return 'awesome';
-}
-
-1;
-
-__END__
-
-# ABSTRACT: Rob's first example
-
-=head1 SYNOPSIS
-
-  use Rob::DZil::ExampleOne;
-  use feature 'say';
-
-  say Rob::DZil::ExampleOne->magic_number;
-
-=head1 DESCRIPTION
-
-A simple example module.
-
-=head1 METHODS
-
-=head2 magic_number
-
-Returns Rob's magic number.
-
-=head2 dist_zilla
-
-Returns the state of Dist::Zilla.
-
-=cut
-\end{minted}
+|-- Changes
+|-- dist.ini
+|-- lib
+|   `-- Rob
+|       `-- DZil
+|           `-- Example.pm
+`-- weaver.ini
 \end{shaded}
-
-% note that there's not $VERSION, and the POD is rather sparse
+\end{frame}
 
 \begin{frame}
-And finally we'll use the first dist.ini you saw above.
+\begin{shaded}
+\inputminted{perl}{Rob-DZil-Example/t/basic.t}
+\end{shaded}
+\end{frame}
+
+\begin{frame}
+\begin{shaded}
+\tiny{\inputminted{perl}{Rob-DZil-Example/lib/Rob/DZil/Example.pm}}
+\end{shaded}
+\end{frame}
+
+\begin{frame}
+\begin{shaded}
+\tiny{\inputminted{perl}{Rob-DZil-Example/dist.ini}}
+\end{shaded}
 \end{frame}
 
 \begin{frame}
@@ -90,19 +54,16 @@ with its contents.  Those contents are...
 \end{frame}
 
 \begin{verbatim}
-Rob-DZil-ExampleOne-0.01
-├── Changes
-├── LICENSE
-├── MANIFEST
-├── META.yml
-├── Makefile.PL
-├── README
-├── dist.ini
-├── lib
-│   └── Rob
-│       └── DZil
-│           └── ExampleOne.pm
-├── t
-│   └── basic.t
-└── weaver.ini
+|-- Changes
+|-- LICENSE
+|-- MANIFEST
+|-- META.yml
+|-- Makefile.PL
+|-- README
+|-- lib
+|   `-- Rob
+|       `-- DZil
+|           `-- Example.pm
+`-- t
+    `-- basic.t
 \end{verbatim}
