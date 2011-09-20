@@ -5,36 +5,8 @@ Dist::Zilla's config file is located at the root of your distribution's director
 is named \textit{dist.ini}.
 \end{frame}
 
-\begin{frame}
-\begin{shaded}
-name              = Rob-DZil-Example \newline
-author            = Rob Hoelz $<$rob@hoelz.ro$>$ \newline
-license           = Perl\_5 \newline
-copyright\_holder = Rob Hoelz \newline
-copyright\_year   = 2011 \newline
-version           = 0.01 \newline
-
-[@Basic]
-\end{shaded}
-\end{frame}
+\inputexample[ini]{basic.ini}
 
 % explain that [@Basic] is a plugin bundle
 
-\begin{frame}
-\begin{shaded}
-[GatherDir] \newline
-[PruneCruft] \newline
-[ManifestSkip] \newline
-[MetaYAML] \newline
-[License] \newline
-[Readme] \newline
-[ExtraTests] \newline
-[ExecDir] \newline
-[ShareDir] \newline
-[MakeMaker] \newline
-[Manifest] \newline
-[TestRelease] \newline
-[ConfirmRelease] \newline
-[UploadToCPAN]
-\end{shaded}
-\end{frame}
+\inputexample[ini]{basic-expanded.ini}

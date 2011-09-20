@@ -24,84 +24,12 @@ many, many other things:
 \pause \item Weaves common POD into your modules.
 \end{itemize}
 
-\pause 
+\pause
 And much, much more!
 \end{frame}
 
 % To show off Dist::Zilla's file munging features...
-\begin{frame}
-\begin{center}
-\LARGE{Before}
-\end{center}
-\end{frame}
-
-\tiny{
-\begin{minted}{perl}
-package Foo::Bar;
-
-use strict;
-use warnings;
-
-our $VERSION = '0.01';
-
-1;
-
-__END__
-
-=head1 NAME
-
-Foo::Bar -
-
-=head1 SYNOPSIS
-
-=head1 DESCRIPTION
-
-=head1 METHODS
-
-=head1 BUG REPORTING
-
-...
-
-=head1 COPYING
-
-...
-
-=head1 AUTHOR
-
-Rob Hoelz <rob@hoelz.ro>
-
-=head1 SEE ALSO
-
-L<Foo>
-\end{minted}
-}
-
-\newpage
-
-\begin{frame}
-\begin{center}
-\LARGE{After}
-\end{center}
-\end{frame}
-\tiny{
-\begin{minted}{perl}
-package Foo::Bar;
-
-use strict;
-use warnings;
-
-1;
-
-__END__
-
-# ABSTRACT:
-
-=head1 SYNOPSIS
-
-=head1 DESCRIPTION
-
-=head1 METHODS
-
-=cut
-\end{minted}
-}
+\seperatorslide{Before}
+\inputexample{module-template-before.pm}
+\seperatorslide{After}
+\inputexample{module-template-after.pm}
