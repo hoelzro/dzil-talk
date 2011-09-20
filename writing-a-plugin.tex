@@ -10,7 +10,29 @@ say "Moosey Fate";
 \end{frame}
 
 \commentary{Dist::Zilla is written using Moose, so to write a plugin, you create a Moose class that consumes one or more roles.}
+\commentary{Dist::Zilla does almost everything in terms of plugins; commands, the user interface, dist minting, dist building, etc.}
+\commentary{Long story short: there are a \emph{lot} of roles in Dist::Zilla.  We're only going to cover a handful here.}
 \commentary{Each role is based off of Dist::Zilla::Role::Plugin.}
 \commentary{If you want to implement a plugin bundle, you can consume the Dist::Zilla::Role::PluginBundle role.}
 
 \seperatorslide{The Dist::Zilla Lifecycle}
+\begin{itemslide}{Plugin Order for Build}
+\item BeforeBuild
+\item FileGatherer
+\item FilePruner
+\item FileMunger
+\item PrereqSource
+\item MetaProvider
+\item InstallTool
+\item AfterBuild
+\end{itemslide}
+
+\begin{frame}
+In addition to the previous plugins being run, the \emph{test} and \emph{release} commands
+have their own lifecycle roles, namely TestRunner in the case of the former, and BeforeRelease, Releaser, and AfterRelease in
+the case of the latter.
+\end{frame}
+
+
+
+\commentary{Learning to use Test::DZil is left as an exercise for the reader. =)}
