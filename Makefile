@@ -5,7 +5,7 @@ all: dzil-talk.pdf
 dzil-talk.pdf: dzil-talk.dvi
 	dvipdf $< $@
 
-dzil-talk.dvi: $(TEX_FILES)
+dzil-talk.dvi: $(TEX_FILES) talk-utils.sty
 	latex -shell-escape dzil-talk.tex
 
 clean:
