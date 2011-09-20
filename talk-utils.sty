@@ -30,3 +30,12 @@
 \end{center}
 \end{frame}
 }
+
+\newenvironment{pluginlist}[1]
+{\begin{frame}[environment=pluginlist,fragile]
+ \begin{center}
+ \LARGE{#1}
+ \end{center}
+ \begin{itemize}}
+{\end{itemize}
+ \end{frame}}
