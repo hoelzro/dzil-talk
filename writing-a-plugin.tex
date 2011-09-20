@@ -33,4 +33,28 @@ have their own lifecycle roles, namely TestRunner in the case of the former, and
 the case of the latter.
 \end{frame}
 
-\seperatorslide{RemoveUnslightlyComments Plugin}
+\seperatorslide{RemoveUnsightlyComments Plugin}
+
+\begin{frame}[fragile]
+\begin{shaded}
+\begin{minted}{ini}
+[RemoveUnsightlyComments]
+\end{minted}
+\end{shaded}
+\end{frame}
+
+\begin{frame}[fragile]
+\begin{shaded}
+\begin{minted}{ini}
+[RemoveUnsightlyComments]
+marker = XXX
+marker = FOR ROB
+\end{minted}
+\end{shaded}
+\end{frame}
+
+\inputexample{Dist-Zilla-Plugin-RemoveUnsightlyComments/corpus/lib/Fake.pm}
+\inputexample{Dist-Zilla-Plugin-RemoveUnsightlyComments/t/01-basic.t}
+\inputexample{Dist-Zilla-Plugin-RemoveUnsightlyComments/t/02-options.t}
+\commentary{We're not going to go over dist.ini here, since it's basically a copy of the one from the earlier example.}
+\inputexample{Dist-Zilla-Plugin-RemoveUnsightlyComments/lib/Dist/Zilla/Plugin/RemoveUnsightlyComments.pm}
