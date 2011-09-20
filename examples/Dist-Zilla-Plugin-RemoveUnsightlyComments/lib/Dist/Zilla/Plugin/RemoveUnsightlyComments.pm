@@ -67,4 +67,18 @@ Removes unsightly comments from your Perl modules.
 
 Markers that signify an unsightly comment.  Defaults to 'XXX' and 'TODO'.
 
+=begin comment
+
+=over
+
+=item mvp_multivalue_args
+
+=item mvp_aliases
+
+=item munge_file
+
+=back
+
+=end comment
+
 =cut
