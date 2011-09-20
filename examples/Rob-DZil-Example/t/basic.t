@@ -1,7 +1,7 @@
 use strict;
 use warnings;
 
-use Test::More plan => 3;
+use Test::More tests => 3;
 
 use_ok 'Rob::DZil::Example';
 
